@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Messenger Chat</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>MASHIYA</h1> <!-- Your name added at the top -->
+
+    <h2>Send Message on Facebook Messenger</h2>
+    
+    <form action="/send_message" method="POST">
+        <!-- Message Box -->
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" placeholder="Type your message here..."></textarea><br><br>
+
+        <!-- Time Box -->
+        <label for="time">Time:</label><br>
+        <input type="text" id="time" name="time" placeholder="Enter time..."><br><br>
+
+        <!-- Token Access Box -->
+        <label for="token">Token Access:</label><br>
+        <input type="text" id="token" name="token" placeholder="Enter access token..."><br><br>
+
+        <!-- Message ID Box -->
+        <label for="message_id">Message ID:</label><br>
+        <input type="text" id="message_id" name="message_id" placeholder="Enter message ID..."><br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Send Message">
+    </form>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
